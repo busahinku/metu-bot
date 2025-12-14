@@ -42,18 +42,19 @@ def main():
     logger.info("🚀 Grade Monitor started on Render.com")
     logger.info("📊 Checking grades every 1 minute...")
 
+    # Initial login (only once at startup)
+    if not monitor.login():
+        logger.error("❌ Initial login failed - cannot start")
+        return
+
+    logger.info("✅ Logged in successfully")
+
     # Run forever
     while True:
         try:
-            # Login
-            if monitor.login():
-                logger.info("✅ Logged in successfully")
-
-                # Check grades
-                monitor.check_grades()
-                logger.info("✅ Grade check completed")
-            else:
-                logger.error("❌ Login failed")
+            # Check grades (will auto re-login if session expires)
+            monitor.check_grades()
+            logger.info("✅ Grade check completed")
 
         except Exception as e:
             logger.error(f"❌ Error: {e}")
