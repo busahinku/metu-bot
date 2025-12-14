@@ -1,0 +1,18 @@
+services:
+  - type: worker
+    name: odtu-grade-monitor
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python render_start.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ODTU_USERNAME
+        sync: false
+      - key: ODTU_PASSWORD
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false

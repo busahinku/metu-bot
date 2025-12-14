@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Secrets
+config.json
+.env
+*.pem
+*.key
+
+# Azure
+local.settings.json
+.azure/
+.python_packages/
+*.zip
+
+# Data
+grades_history.json
+grades_backup_*.json
+*.log
+nohup.out
+
+# Test
+test_data/
