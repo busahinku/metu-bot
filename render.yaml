@@ -1,10 +1,18 @@
 services:
-  - type: worker
+  - type: cron
     name: odtu-grade-monitor
     env: python
     plan: free
+    schedule: "* 4-23 * * *"  # Every minute 04:00-23:00 UTC = 07:00-02:00 Turkey time (UTC+3)
     buildCommand: pip install -r requirements.txt
-    startCommand: python render_start.py
+    startCommand: python grade_monitor_cron.py
+    
+    # Persistent disk for state (grades_history.json)
+    disk:
+      name: grades-data
+      mountPath: /opt/render/project/.data
+      sizeGB: 1
+    
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
@@ -16,3 +24,5 @@ services:
         sync: false
       - key: TELEGRAM_CHAT_ID
         sync: false
+      - key: GRADES_FILE
+        value: /opt/render/project/.data/grades_history.json
