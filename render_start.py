@@ -58,7 +58,7 @@ def main():
 
     logger.info("🚀 Grade Monitor started")
     logger.info("📊 Active hours: 08:00-02:00 Turkey time (UTC+3)")
-    logger.info("📊 Checking grades every 20 minutes during active hours...")
+    logger.info("📊 Checking grades every 90 seconds during active hours...")
 
     logged_in = False
 
@@ -94,9 +94,9 @@ def main():
             logger.error(f"❌ Error: {e}")
             logged_in = False  # Reset login on error
 
-        # Wait 20 minutes
-        logger.info("⏳ Waiting 20 minutes until next check...")
-        time.sleep(1200)  # 20 minutes = 1200 seconds
+        # Wait 90 seconds
+        logger.info("⏳ Waiting 90 seconds until next check...")
+        time.sleep(90)  # 90 seconds = 1.5 minutes
 
 if __name__ == '__main__':
     main()
