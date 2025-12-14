@@ -23,13 +23,13 @@ logger = logging.getLogger(__name__)
 TURKEY_TZ = pytz.timezone('Europe/Istanbul')
 
 def is_active_hours():
-    """Check if current time is between 07:00 and 02:00 Turkey time"""
+    """Check if current time is between 08:00 and 02:00 Turkey time (UTC+3)"""
     turkey_time = datetime.now(TURKEY_TZ)
     current_hour = turkey_time.hour
     
-    # Active between 07:00 and 02:00 (02:00 = 2 AM)
-    # This means: 7, 8, 9, ..., 23, 0, 1
-    if current_hour >= 7 or current_hour < 2:
+    # Active between 08:00 and 02:00 (sleep: 02:00-08:00)
+    # This means: 8, 9, 10, ..., 23, 0, 1
+    if current_hour >= 8 or current_hour < 2:
         return True
     return False
 
@@ -57,8 +57,8 @@ def main():
     )
 
     logger.info("🚀 Grade Monitor started")
-    logger.info("📊 Active hours: 07:00-02:00 Turkey time (UTC+3)")
-    logger.info("📊 Checking grades every 1 minute during active hours...")
+    logger.info("📊 Active hours: 08:00-02:00 Turkey time (UTC+3)")
+    logger.info("📊 Checking grades every 20 minutes during active hours...")
 
     logged_in = False
 
@@ -94,9 +94,9 @@ def main():
             logger.error(f"❌ Error: {e}")
             logged_in = False  # Reset login on error
 
-        # Wait 1 minute
-        logger.info("⏳ Waiting 1 minute until next check...")
-        time.sleep(60)
+        # Wait 20 minutes
+        logger.info("⏳ Waiting 20 minutes until next check...")
+        time.sleep(1200)  # 20 minutes = 1200 seconds
 
 if __name__ == '__main__':
     main()
