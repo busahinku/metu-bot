@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
-Render.com entry point for grade monitor
+Render.com / Railway entry point for grade monitor
 Runs continuously as a background worker
+Only active between 07:00-02:00 Turkey time (UTC+3)
 """
 
 import time
 import logging
 import os
+from datetime import datetime
+import pytz
 from grade_monitor import ODTUClassMonitor
 
 # Configure logging
@@ -15,6 +18,20 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# Turkey timezone
+TURKEY_TZ = pytz.timezone('Europe/Istanbul')
+
+def is_active_hours():
+    """Check if current time is between 07:00 and 02:00 Turkey time"""
+    turkey_time = datetime.now(TURKEY_TZ)
+    current_hour = turkey_time.hour
+    
+    # Active between 07:00 and 02:00 (02:00 = 2 AM)
+    # This means: 7, 8, 9, ..., 23, 0, 1
+    if current_hour >= 7 or current_hour < 2:
+        return True
+    return False
 
 def main():
     """Run grade monitor continuously"""
@@ -39,25 +56,43 @@ def main():
         grades_file_path='grades_history.json'
     )
 
-    logger.info("🚀 Grade Monitor started on Render.com")
-    logger.info("📊 Checking grades every 1 minute...")
+    logger.info("🚀 Grade Monitor started")
+    logger.info("📊 Active hours: 07:00-02:00 Turkey time (UTC+3)")
+    logger.info("📊 Checking grades every 1 minute during active hours...")
 
-    # Initial login (only once at startup)
-    if not monitor.login():
-        logger.error("❌ Initial login failed - cannot start")
-        return
-
-    logger.info("✅ Logged in successfully")
+    logged_in = False
 
     # Run forever
     while True:
         try:
+            # Check if we're in active hours
+            if not is_active_hours():
+                turkey_time = datetime.now(TURKEY_TZ)
+                logger.info(f"😴 Outside active hours (current: {turkey_time.strftime('%H:%M')} Turkey time)")
+                logger.info("⏳ Sleeping for 10 minutes...")
+                logged_in = False  # Reset login when inactive
+                time.sleep(600)  # Sleep 10 minutes
+                continue
+
+            # Login once when entering active hours
+            if not logged_in:
+                logger.info("🌅 Entering active hours - logging in...")
+                if not monitor.login():
+                    logger.error("❌ Login failed - will retry in 1 minute")
+                    time.sleep(60)
+                    continue
+                logger.info("✅ Logged in successfully")
+                logged_in = True
+
             # Check grades (will auto re-login if session expires)
+            turkey_time = datetime.now(TURKEY_TZ)
+            logger.info(f"🔍 Checking grades at {turkey_time.strftime('%H:%M:%S')} Turkey time...")
             monitor.check_grades()
             logger.info("✅ Grade check completed")
 
         except Exception as e:
             logger.error(f"❌ Error: {e}")
+            logged_in = False  # Reset login on error
 
         # Wait 1 minute
         logger.info("⏳ Waiting 1 minute until next check...")
