@@ -81,7 +81,12 @@ class ODTUClassMonitor:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
                          'AppleWebKit/537.36 (KHTML, like Gecko) '
-                         'Chrome/120.0.0.0 Safari/537.36'
+                         'Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9,tr;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1'
         })
 
         # Persistent storage path (Azure File Share or local)
@@ -193,28 +198,51 @@ class ODTUClassMonitor:
         try:
             logger.info("Attempting login...")
 
+            # Small delay to avoid rate limiting
+            time.sleep(2)
+
             # Get login page to retrieve logintoken
-            response = self.session.get(login_url, timeout=10)
+            response = self.session.get(login_url, timeout=15, allow_redirects=True)
 
             if response.status_code != 200:
                 logger.error(f"Login page returned status {response.status_code}")
+                logger.error(f"Final URL: {response.url}")
                 return False
+
+            # Debug: Check response size
+            logger.info(f"Login page received: {len(response.text)} bytes")
 
             soup = BeautifulSoup(response.text, 'html.parser')
             logintoken = soup.find('input', {'name': 'logintoken'})
 
             if not logintoken:
+                # Try alternative selectors
+                logintoken = soup.select_one('input[name="logintoken"]')
+
+            if not logintoken:
                 logger.error("Could not find login token in page")
+                logger.error(f"Page title: {soup.title.string if soup.title else 'No title'}")
+
+                # Check if we got an error page or redirect
+                if 'error' in response.text.lower() or 'blocked' in response.text.lower():
+                    logger.error("Possible blocking or error page detected")
+
+                # Save first 500 chars for debugging
+                logger.error(f"Page preview: {response.text[:500]}")
                 return False
 
             # Perform login
             login_data = {
                 'username': self.username,
                 'password': self.password,  # Never logged
-                'logintoken': logintoken['value']
+                'logintoken': logintoken.get('value', '')
             }
 
-            response = self.session.post(login_url, data=login_data, timeout=10)
+            # Add referer header for login POST
+            headers = {'Referer': login_url}
+            response = self.session.post(login_url, data=login_data,
+                                        headers=headers, timeout=15,
+                                        allow_redirects=True)
 
             # Check if login successful
             if 'logout.php' in response.text:
@@ -228,16 +256,21 @@ class ODTUClassMonitor:
                 return True
             else:
                 logger.error("❌ Login failed - check credentials")
+                # Check for common error messages
+                if 'Invalid login' in response.text or 'invalid' in response.text.lower():
+                    logger.error("Invalid credentials detected")
                 return False
 
         except requests.exceptions.Timeout:
-            logger.error("Login request timed out")
+            logger.error("Login request timed out - server may be slow or blocking")
             return False
         except requests.exceptions.RequestException as e:
             logger.error(f"Network error during login: {e}")
             return False
         except Exception as e:
             logger.error(f"Unexpected error during login: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
             return False
 
     def safe_find(self, soup, *args, **kwargs):

@@ -61,6 +61,7 @@ def main():
     logger.info("📊 Checking grades every 90 seconds during active hours...")
 
     logged_in = False
+    login_failures = 0
 
     # Run forever
     while True:
@@ -71,6 +72,7 @@ def main():
                 logger.info(f"😴 Outside active hours (current: {turkey_time.strftime('%H:%M')} Turkey time)")
                 logger.info("⏳ Sleeping for 10 minutes...")
                 logged_in = False  # Reset login when inactive
+                login_failures = 0  # Reset failures when inactive
                 time.sleep(600)  # Sleep 10 minutes
                 continue
 
@@ -78,11 +80,15 @@ def main():
             if not logged_in:
                 logger.info("🌅 Entering active hours - logging in...")
                 if not monitor.login():
-                    logger.error("❌ Login failed - will retry in 1 minute")
-                    time.sleep(60)
+                    login_failures += 1
+                    # Exponential backoff: 1min, 2min, 4min, 8min, max 15min
+                    wait_time = min(60 * (2 ** (login_failures - 1)), 900)
+                    logger.error(f"❌ Login failed (attempt {login_failures}) - will retry in {wait_time//60} minutes")
+                    time.sleep(wait_time)
                     continue
                 logger.info("✅ Logged in successfully")
                 logged_in = True
+                login_failures = 0  # Reset failures on success
 
             # Check grades (will auto re-login if session expires)
             turkey_time = datetime.now(TURKEY_TZ)
@@ -93,6 +99,9 @@ def main():
         except Exception as e:
             logger.error(f"❌ Error: {e}")
             logged_in = False  # Reset login on error
+            logger.info("⏳ Waiting 2 minutes before retry...")
+            time.sleep(120)  # Wait 2 minutes on error
+            continue
 
         # Wait 90 seconds
         logger.info("⏳ Waiting 90 seconds until next check...")
