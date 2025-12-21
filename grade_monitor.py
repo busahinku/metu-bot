@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-ODTÜClass Grade Monitor with Telegram Notifications - Azure Ready
-Securely monitors grades with Azure Key Vault integration and persistent storage
+ODTÜClass Grade Monitor with Telegram Notifications
+Monitors grades and sends notifications via Telegram
 """
 
 import requests
@@ -15,15 +15,6 @@ import schedule
 import sys
 import os
 import re
-
-# Azure SDK imports (with fallback for local development)
-try:
-    from azure.identity import DefaultAzureCredential
-    from azure.keyvault.secrets import SecretClient
-    AZURE_AVAILABLE = True
-except ImportError:
-    AZURE_AVAILABLE = False
-    print("⚠️  Azure SDK not installed - using local config only")
 
 # Configure structured logging
 logging.basicConfig(
@@ -89,11 +80,9 @@ class ODTUClassMonitor:
             'Upgrade-Insecure-Requests': '1'
         })
 
-        # Persistent storage path (Azure File Share or local)
+        # Persistent storage path
         if grades_file_path:
             self.grades_file = Path(grades_file_path)
-        elif os.getenv('DATA_DIR'):
-            self.grades_file = Path(os.getenv('DATA_DIR')) / 'grades_history.json'
         else:
             self.grades_file = Path('grades_history.json')
 
@@ -650,7 +639,7 @@ class ODTUClassMonitor:
     def run(self):
         """Start the monitoring service with intelligent scheduling"""
         print("╔" + "="*58 + "╗")
-        print("║  🎓 ODTÜClass Grade Monitor - Azure Edition" + " "*12 + "║")
+        print("║  🎓 ODTÜClass Grade Monitor" + " "*29 + "║")
         print("║  Intelligent polling with exponential backoff" + " "*9 + "║")
         print("║  Press Ctrl+C to stop" + " "*36 + "║")
         print("╚" + "="*58 + "╝\n")
@@ -692,32 +681,6 @@ class ODTUClassMonitor:
             logger.info("Monitor stopped by user")
             print("\n\n👋 Stopping monitor...")
             sys.exit(0)
-
-
-def load_config_from_keyvault(vault_url):
-    """Load secrets from Azure Key Vault"""
-    if not AZURE_AVAILABLE:
-        logger.error("Azure SDK not available - cannot load from Key Vault")
-        raise ImportError("Azure SDK required for Key Vault")
-
-    try:
-        logger.info(f"Loading secrets from Key Vault: {vault_url}")
-        credential = DefaultAzureCredential()
-        client = SecretClient(vault_url=vault_url, credential=credential)
-
-        config = {
-            'username': client.get_secret('odtu-username').value,
-            'password': client.get_secret('odtu-password').value,
-            'telegram_bot_token': client.get_secret('telegram-bot-token').value,
-            'telegram_chat_id': client.get_secret('telegram-chat-id').value
-        }
-
-        logger.info("✅ Successfully loaded secrets from Key Vault")
-        return config
-
-    except Exception as e:
-        logger.error(f"Failed to load secrets from Key Vault: {e}")
-        raise
 
 
 def load_config_local():
@@ -764,10 +727,10 @@ def main():
     """Main entry point"""
     logger.info("=== ODTÜClass Grade Monitor Starting ===")
 
-    # Check if running in Azure (environment variables set)
+    # Check if running in production (environment variables set)
     if os.getenv('ODTU_USERNAME'):
-        # Production: Load from environment variables
-        logger.info("Running in Azure mode - using environment variables")
+        # Production: Load from environment variables (Railway, Render, etc.)
+        logger.info("Running in production mode - using environment variables")
         print("🔐 Loading credentials from environment variables...")
         config = {
             'username': os.getenv('ODTU_USERNAME'),
@@ -775,33 +738,17 @@ def main():
             'telegram_bot_token': os.getenv('TELEGRAM_BOT_TOKEN'),
             'telegram_chat_id': os.getenv('TELEGRAM_CHAT_ID')
         }
-    elif os.getenv('AZURE_KEYVAULT_URL'):
-        # Alternative: Azure Key Vault (for non-student accounts)
-        logger.info("Running in Azure mode - using Key Vault")
-        print("🔐 Loading credentials from Azure Key Vault...")
-        try:
-            config = load_config_from_keyvault(os.getenv('AZURE_KEYVAULT_URL'))
-        except Exception as e:
-            logger.error(f"Failed to load from Key Vault: {e}")
-            print(f"❌ Failed to load from Key Vault: {e}")
-            sys.exit(1)
     else:
         # Local development: Load from config.json
         logger.warning("Running in local mode - using config.json")
-        print("⚠️  Using local config.json (not for production!)")
+        print("⚠️  Using local config.json")
         config = load_config_local()
 
     # Get optional base URL from config or environment
     base_url = config.get('base_url') or os.getenv('ODTU_BASE_URL')
 
-    # Get data directory for persistent storage
-    # Azure: /app/data, Local: current directory
-    if os.getenv('DATA_DIR'):
-        data_dir = os.getenv('DATA_DIR')
-        grades_file = f"{data_dir}/grades_history.json"
-    else:
-        # Local development - use current directory
-        grades_file = "grades_history.json"
+    # Use current directory for grades file
+    grades_file = "grades_history.json"
 
     # Create monitor instance
     monitor = ODTUClassMonitor(
