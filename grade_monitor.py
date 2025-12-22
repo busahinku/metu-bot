@@ -68,17 +68,21 @@ class ODTUClassMonitor:
         self.base_url = base_url or os.getenv('ODTU_BASE_URL',
                                                'https://odtuclass2025f.metu.edu.tr')
 
-        self.session = requests.Session()
-        self.session.headers.update({
+        # Step 1.0: Prepare default HTTP headers
+        self.default_headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-                         'AppleWebKit/537.36 (KHTML, like Gecko) '
-                         'Chrome/120.0.0.0 Safari/537.36',
+                          'AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/120.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.9,tr;q=0.8',
             'Accept-Encoding': 'gzip, deflate, br',
             'Connection': 'keep-alive',
             'Upgrade-Insecure-Requests': '1'
-        })
+        }
+
+        # Step 1.1: Initialize HTTP session
+        self.session = requests.Session()
+        self.session.headers.update(self.default_headers)
 
         # Persistent storage path
         if grades_file_path:
@@ -97,6 +101,18 @@ class ODTUClassMonitor:
 
         logger.info(f"Monitor initialized - Base URL: {self.base_url}")
         logger.info(f"Grades file: {self.grades_file}")
+
+    def _reset_session(self):
+        """# Step 2.0: Reset HTTP session to recover from bad cookie/state"""
+        try:
+            self.session.close()
+        except Exception:
+            pass
+
+        self.session = requests.Session()
+        self.session.headers.update(self.default_headers)
+        self.user_id = None
+        logger.warning("HTTP session has been reset")
 
     def send_telegram_message(self, message):
         """Send message via Telegram API (direct HTTP, no async)"""
@@ -180,8 +196,8 @@ class ODTUClassMonitor:
         except Exception as e:
             logger.error(f"Error saving grades: {e}")
 
-    def login(self):
-        """Login to ODTÜClass"""
+    def login(self, _retry=False):
+        """# Step 3.0: Login to ODTÜClass (with one self-healing retry)"""
         login_url = f"{self.base_url}/login/index.php"
 
         try:
@@ -218,6 +234,14 @@ class ODTUClassMonitor:
 
                 # Save first 500 chars for debugging
                 logger.error(f"Page preview: {response.text[:500]}")
+
+                # Step 3.1: If session might be poisoned, reset once and retry
+                if not _retry:
+                    logger.warning("Login token missing - resetting session and retrying login once...")
+                    self._reset_session()
+                    time.sleep(3)  # Small pause before retry
+                    return self.login(_retry=True)
+
                 return False
 
             # Perform login
