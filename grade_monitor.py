@@ -68,17 +68,7 @@ class ODTUClassMonitor:
         self.base_url = base_url or os.getenv('ODTU_BASE_URL',
                                                'https://odtuclass2025f.metu.edu.tr')
 
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-                         'AppleWebKit/537.36 (KHTML, like Gecko) '
-                         'Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9,tr;q=0.8',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
-        })
+        self.session = self._create_session()
 
         # Persistent storage path
         if grades_file_path:
@@ -97,6 +87,22 @@ class ODTUClassMonitor:
 
         logger.info(f"Monitor initialized - Base URL: {self.base_url}")
         logger.info(f"Grades file: {self.grades_file}")
+
+    def _create_session(self):
+        """Create a fresh HTTP session with default headers"""
+        session = requests.Session()
+        session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                          'AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9,tr;q=0.8',
+            # Avoid br to prevent brotli decode issues on some hosts
+            'Accept-Encoding': 'gzip, deflate',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1'
+        })
+        return session
 
     def send_telegram_message(self, message):
         """Send message via Telegram API (direct HTTP, no async)"""
@@ -202,11 +208,17 @@ class ODTUClassMonitor:
             logger.info(f"Login page received: {len(response.text)} bytes")
 
             soup = BeautifulSoup(response.text, 'html.parser')
-            logintoken = soup.find('input', {'name': 'logintoken'})
+            logintoken = soup.find('input', {'name': 'logintoken'}) or soup.select_one('input[name="logintoken"]')
 
+            # If token missing, the session might be blocked/stale. Recreate session and retry once.
             if not logintoken:
-                # Try alternative selectors
-                logintoken = soup.select_one('input[name="logintoken"]')
+                logger.warning("Login token not found - refreshing session and retrying once")
+                self.session = self._create_session()
+                time.sleep(1)
+                response = self.session.get(login_url, timeout=15, allow_redirects=True)
+                logger.info(f"Login page retry received: {len(response.text)} bytes")
+                soup = BeautifulSoup(response.text, 'html.parser')
+                logintoken = soup.find('input', {'name': 'logintoken'}) or soup.select_one('input[name=\"logintoken\"]')
 
             if not logintoken:
                 logger.error("Could not find login token in page")
