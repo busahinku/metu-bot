@@ -1,0 +1,107 @@
+# .github/workflows/grade_monitor.yml
+
+name: Grade Monitor
+
+on:
+  schedule:
+    - cron: '* * * * *'   # Her dakika çalışır (GitHub minimum budur)
+  workflow_dispatch:        # Manuel tetikleme
+
+jobs:
+  check-grades:
+    runs-on: ubuntu-latest
+    # Sadece 08:00-02:00 Türkiye saatinde çalışsın
+    # (Saat kontrolü Python içinde yapılıyor zaten, burada job'ı skip edebiliriz)
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore grades history
+        run: |
+          # grades_history.json zaten repo'da varsa otomatik gelir (checkout ile)
+          if [ -f grades_history.json ]; then
+            echo "✅ grades_history.json found ($(wc -c < grades_history.json) bytes)"
+          else
+            echo "📋 First run - no history yet"
+          fi
+
+      - name: Check active hours (skip if sleep time)
+        id: hours_check
+        run: |
+          python3 -c "
+          from datetime import datetime
+          import pytz
+          tz = pytz.timezone('Europe/Istanbul')
+          hour = datetime.now(tz).hour
+          active = hour >= 8 or hour < 2
+          print(f'Current Turkey hour: {hour}')
+          print(f'Active: {active}')
+          if not active:
+              print('SKIP=true')
+              open('/tmp/skip', 'w').write('1')
+          "
+          if [ -f /tmp/skip ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run single grade check
+        if: steps.hours_check.outputs.skip == 'false'
+        env:
+          ODTU_USERNAME: ${{ secrets.ODTU_USERNAME }}
+          ODTU_PASSWORD: ${{ secrets.ODTU_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ODTU_BASE_URL: ${{ secrets.ODTU_BASE_URL }}
+        run: |
+          python3 -c "
+          import os
+          from grade_monitor import ODTUClassMonitor
+
+          monitor = ODTUClassMonitor(
+              username=os.environ['ODTU_USERNAME'],
+              password=os.environ['ODTU_PASSWORD'],
+              telegram_token=os.environ['TELEGRAM_BOT_TOKEN'],
+              chat_id=os.environ['TELEGRAM_CHAT_ID'],
+              grades_file_path='grades_history.json'
+          )
+
+          if monitor.login():
+              monitor.check_grades()
+          else:
+              print('Login failed')
+              exit(1)
+          "
+
+      - name: Commit updated grades history
+        if: steps.hours_check.outputs.skip == 'false'
+        run: |
+          git config user.name "Grade Monitor Bot"
+          git config user.email "bot@github-actions"
+          git add grades_history.json
+          # Sadece değişiklik varsa commit at
+          if git diff --staged --quiet; then
+            echo "No changes in grades_history.json"
+          else
+            git commit -m "chore: update grades history [skip ci]"
+            git push
+          fi
