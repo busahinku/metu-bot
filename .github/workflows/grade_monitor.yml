@@ -1,8 +1,10 @@
 name: Grade Monitor
+
 on:
-  schedule:
-    - cron: '* * * * *'
+  repository_dispatch:
+    types: [run-grade-check]
   workflow_dispatch:
+
 jobs:
   check-grades:
     runs-on: ubuntu-latest
@@ -11,11 +13,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install -r requirements.txt
+
       - name: Run grade check
         env:
           ODTU_USERNAME: ${{ secrets.ODTU_USERNAME }}
@@ -37,6 +42,7 @@ jobs:
           if monitor.login():
               monitor.check_grades()
           "
+
       - name: Save grades history
         run: |
           git config user.name "Grade Monitor Bot"
