@@ -1,10 +1,8 @@
 name: Grade Monitor
-
 on:
   schedule:
     - cron: '* * * * *'
   workflow_dispatch:
-
 jobs:
   check-grades:
     runs-on: ubuntu-latest
@@ -13,20 +11,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
       - name: Run grade check
         env:
           ODTU_USERNAME: ${{ secrets.ODTU_USERNAME }}
@@ -47,11 +36,7 @@ jobs:
           )
           if monitor.login():
               monitor.check_grades()
-          else:
-              print('Login failed')
-              exit(1)
           "
-
       - name: Save grades history
         run: |
           git config user.name "Grade Monitor Bot"
