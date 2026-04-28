@@ -7,6 +7,7 @@ on:
     - cron: '* * * * *'   # Her dakika çalışır (GitHub minimum budur)
   workflow_dispatch:        # Manuel tetikleme
 
+
 jobs:
   check-grades:
     runs-on: ubuntu-latest
