@@ -30,7 +30,7 @@ local.settings.json
 *.zip
 
 # Data
-grades_history.json
+#grades_history.json
 grades_backup_*.json
 *.log
 nohup.out
