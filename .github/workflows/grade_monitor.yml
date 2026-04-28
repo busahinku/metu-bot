@@ -97,7 +97,7 @@ jobs:
         run: |
           git config user.name "Grade Monitor Bot"
           git config user.email "bot@github-actions"
-          git add grades_history.json
+          git add -f grades_history.json
           # Sadece değişiklik varsa commit at
           if git diff --staged --quiet; then
             echo "No changes in grades_history.json"
