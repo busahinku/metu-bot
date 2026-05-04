@@ -64,7 +64,7 @@
         "average": "33.26 (182)"
       }
     },
-    "last_updated": "2026-05-04T17:50:31.310555"
+    "last_updated": "2026-05-04T17:52:30.016789"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -76,7 +76,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:32.804801"
+    "last_updated": "2026-05-04T17:52:31.886011"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -133,7 +133,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:34.360060"
+    "last_updated": "2026-05-04T17:52:33.992954"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -145,7 +145,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:35.685727"
+    "last_updated": "2026-05-04T17:52:35.443735"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
@@ -227,7 +227,7 @@
         "average": "30.02 (177)"
       }
     },
-    "last_updated": "2026-05-04T17:50:37.466734"
+    "last_updated": "2026-05-04T17:52:36.981587"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
@@ -244,7 +244,7 @@
         "average": "99.81 (33)"
       }
     },
-    "last_updated": "2026-05-04T17:50:38.984494"
+    "last_updated": "2026-05-04T17:52:38.287222"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -256,7 +256,7 @@
         "average": "44.78 (186)"
       }
     },
-    "last_updated": "2026-05-04T17:50:40.496398"
+    "last_updated": "2026-05-04T17:52:39.565244"
   },
   "[STAT 304 Section 1] Mathematical Statistics II": {
     "course_id": "1003",
@@ -283,7 +283,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:41.822972"
+    "last_updated": "2026-05-04T17:52:40.865755"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
@@ -320,7 +320,7 @@
         "average": "43.56 (102)"
       }
     },
-    "last_updated": "2026-05-04T17:50:43.330629"
+    "last_updated": "2026-05-04T17:52:42.332000"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -337,7 +337,7 @@
         "average": "97.44 (39)"
       }
     },
-    "last_updated": "2026-05-04T17:50:44.827441"
+    "last_updated": "2026-05-04T17:52:43.615146"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
@@ -354,7 +354,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:46.172771"
+    "last_updated": "2026-05-04T17:52:44.928748"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -366,7 +366,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:47.508324"
+    "last_updated": "2026-05-04T17:52:46.210821"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -393,7 +393,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:48.877443"
+    "last_updated": "2026-05-04T17:52:47.517954"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
@@ -401,16 +401,21 @@
     "assignments": {
       "Assignment 1": {
         "grade": "96.00",
-        "weight": "100.00 %",
+        "weight": "50.00 %",
         "average": "89.89 (72)"
       },
+      "Midterm 1": {
+        "grade": "-",
+        "weight": "50.00 %",
+        "average": "-"
+      },
       "Course total": {
-        "grade": "96.00",
+        "grade": "48.00",
         "weight": "-",
-        "average": "89.89 (72)"
+        "average": "44.94 (72)"
       }
     },
-    "last_updated": "2026-05-04T17:50:50.195398"
+    "last_updated": "2026-05-04T17:52:48.812594"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
@@ -422,6 +427,6 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T17:50:51.688131"
+    "last_updated": "2026-05-04T17:52:50.087462"
   }
 }
