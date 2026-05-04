@@ -64,7 +64,7 @@
         "average": "33.26 (182)"
       }
     },
-    "last_updated": "2026-05-04T18:02:30.051231"
+    "last_updated": "2026-05-04T18:04:26.337253"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -76,7 +76,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:31.780606"
+    "last_updated": "2026-05-04T18:04:27.674415"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -133,7 +133,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:33.171048"
+    "last_updated": "2026-05-04T18:04:29.251566"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -145,7 +145,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:34.471067"
+    "last_updated": "2026-05-04T18:04:30.734986"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
@@ -227,7 +227,7 @@
         "average": "30.02 (177)"
       }
     },
-    "last_updated": "2026-05-04T18:02:35.898322"
+    "last_updated": "2026-05-04T18:04:32.153681"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
@@ -244,7 +244,7 @@
         "average": "99.81 (33)"
       }
     },
-    "last_updated": "2026-05-04T18:02:37.898933"
+    "last_updated": "2026-05-04T18:04:33.648753"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -256,7 +256,7 @@
         "average": "44.78 (186)"
       }
     },
-    "last_updated": "2026-05-04T18:02:39.438228"
+    "last_updated": "2026-05-04T18:04:35.187710"
   },
   "[STAT 304 Section 1] Mathematical Statistics II": {
     "course_id": "1003",
@@ -283,7 +283,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:40.958270"
+    "last_updated": "2026-05-04T18:04:36.539442"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
@@ -320,7 +320,7 @@
         "average": "43.56 (102)"
       }
     },
-    "last_updated": "2026-05-04T18:02:42.472939"
+    "last_updated": "2026-05-04T18:04:38.082523"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -337,7 +337,7 @@
         "average": "97.44 (39)"
       }
     },
-    "last_updated": "2026-05-04T18:02:43.822936"
+    "last_updated": "2026-05-04T18:04:39.580814"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
@@ -354,7 +354,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:45.702010"
+    "last_updated": "2026-05-04T18:04:41.065199"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -366,7 +366,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:47.050813"
+    "last_updated": "2026-05-04T18:04:42.401348"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -393,11 +393,11 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:48.426801"
+    "last_updated": "2026-05-04T18:04:43.940236"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
-    "overall_grade": "48.00",
+    "overall_grade": "95.50",
     "assignments": {
       "Assignment 1": {
         "grade": "96.00",
@@ -405,17 +405,17 @@
         "average": "89.89 (72)"
       },
       "Midterm 1": {
-        "grade": "-",
+        "grade": "95.00",
         "weight": "50.00 %",
-        "average": "77.59 (37)"
+        "average": "76.98 (45)"
       },
       "Course total": {
-        "grade": "48.00",
+        "grade": "95.50",
         "weight": "-",
-        "average": "62.29 (75)"
+        "average": "66.24 (75)"
       }
     },
-    "last_updated": "2026-05-04T18:02:49.761473"
+    "last_updated": "2026-05-04T18:04:45.504490"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
@@ -427,6 +427,6 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-04T18:02:51.800451"
+    "last_updated": "2026-05-04T18:04:46.828783"
   }
 }
