@@ -74,7 +74,7 @@
         "average": "22.55 (181)"
       }
     },
-    "last_updated": "2026-05-11T21:06:28.478120"
+    "last_updated": "2026-05-11T21:10:42.220634"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -86,7 +86,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:06:30.050772"
+    "last_updated": "2026-05-11T21:10:43.674676"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -143,7 +143,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:06:31.821811"
+    "last_updated": "2026-05-11T21:10:45.593764"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -155,31 +155,155 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:06:33.529594"
+    "last_updated": "2026-05-11T21:10:47.293758"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
     "overall_grade": "30.62",
-    "assignments": {},
-    "last_updated": "2026-05-11T21:06:35.129085"
+    "assignments": {
+      "SRS part-1": {
+        "grade": "100.00",
+        "weight": "25.00 %",
+        "average": "92.96 (167)"
+      },
+      "SRS final": {
+        "grade": "100.00",
+        "weight": "25.00 %",
+        "average": "94.44 (171)"
+      },
+      "SAD part-1": {
+        "grade": "-",
+        "weight": "25.00 %",
+        "average": "-"
+      },
+      "SAD final": {
+        "grade": "-",
+        "weight": "25.00 %",
+        "average": "-"
+      },
+      "Test Plan": {
+        "grade": "-",
+        "weight": "-",
+        "average": "-"
+      },
+      "Project Quiz": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Participation": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "MTq1": {
+        "grade": "25.50",
+        "weight": "-",
+        "average": "27.21 (162)"
+      },
+      "MTq2": {
+        "grade": "15.00",
+        "weight": "-",
+        "average": "18.99 (162)"
+      },
+      "MTq3": {
+        "grade": "3.00",
+        "weight": "-",
+        "average": "5.69 (175)"
+      },
+      "MTq4": {
+        "grade": "12.00",
+        "weight": "-",
+        "average": "9.68 (175)"
+      },
+      "MTq5": {
+        "grade": "11.00",
+        "weight": "-",
+        "average": "10.89 (175)"
+      },
+      "Midterm": {
+        "grade": "66.50",
+        "weight": "-",
+        "average": "69.03 (175)"
+      },
+      "Final": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Course total": {
+        "grade": "30.62",
+        "weight": "-",
+        "average": "30.36 (175)"
+      }
+    },
+    "last_updated": "2026-05-11T21:10:48.834079"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-05-11T21:06:36.724023"
+    "assignments": {
+      "Attendance": {
+        "grade": "-",
+        "weight": "-",
+        "average": "99.83 (33)"
+      },
+      "Course total": {
+        "grade": "-",
+        "weight": "-",
+        "average": "99.83 (33)"
+      }
+    },
+    "last_updated": "2026-05-11T21:10:51.078143"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-05-11T21:06:48.200584"
+    "assignments": {
+      "Midterm": {
+        "grade": "43.00",
+        "weight": "0.00 %",
+        "average": "44.78 (186)"
+      }
+    },
+    "last_updated": "2026-05-11T21:10:52.556980"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-05-11T21:06:56.744832"
+    "assignments": {
+      "Home Work-1": {
+        "grade": "-",
+        "weight": "16.67 %",
+        "average": "-"
+      },
+      "Attendance": {
+        "grade": "100.00",
+        "weight": "16.67 %",
+        "average": "100.00 (83)"
+      },
+      "Quiz 1": {
+        "grade": "96.00",
+        "weight": "16.67 %",
+        "average": "65.54 (91)"
+      },
+      "Home Work 2": {
+        "grade": "-",
+        "weight": "16.67 %",
+        "average": "-"
+      },
+      "Midterm": {
+        "grade": "94.00",
+        "weight": "16.67 %",
+        "average": "67.31 (98)"
+      },
+      "Course total": {
+        "grade": "65.00",
+        "weight": "-",
+        "average": "37.90 (102)"
+      }
+    },
+    "last_updated": "2026-05-11T21:10:54.454680"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -196,7 +320,7 @@
         "average": "97.44 (39)"
       }
     },
-    "last_updated": "2026-05-11T21:07:00.137491"
+    "last_updated": "2026-05-11T21:10:55.898349"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
@@ -213,7 +337,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:07:02.002669"
+    "last_updated": "2026-05-11T21:10:57.949737"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -225,7 +349,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:07:03.388629"
+    "last_updated": "2026-05-11T21:10:59.407730"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -252,7 +376,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:07:04.781843"
+    "last_updated": "2026-05-11T21:11:01.096803"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
@@ -274,7 +398,7 @@
         "average": "75.84 (75)"
       }
     },
-    "last_updated": "2026-05-11T21:07:05.994852"
+    "last_updated": "2026-05-11T21:11:02.761138"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
@@ -286,6 +410,6 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-05-11T21:07:07.352491"
+    "last_updated": "2026-05-11T21:11:04.197069"
   }
 }
