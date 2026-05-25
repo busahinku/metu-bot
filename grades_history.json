@@ -89,187 +89,37 @@
         "average": "22.55 (181)"
       }
     },
-    "last_updated": "2026-05-25T14:48:30.009436"
+    "last_updated": "2026-05-25T14:59:00.855824"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
     "overall_grade": "-",
-    "assignments": {
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-05-25T14:48:39.979257"
+    "assignments": {},
+    "last_updated": "2026-05-25T14:59:16.465987"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
     "overall_grade": "-",
-    "assignments": {
-      "Midterm I": {
-        "grade": "52.50",
-        "weight": "0.00 %",
-        "average": "55.38 (166)"
-      },
-      "Midterm I - Q1": {
-        "grade": "4.00",
-        "weight": "0.00 %",
-        "average": "5.19 (166)"
-      },
-      "Midterm I - Q2": {
-        "grade": "8.00",
-        "weight": "0.00 %",
-        "average": "7.76 (166)"
-      },
-      "Midterm I - Q3": {
-        "grade": "10.00",
-        "weight": "0.00 %",
-        "average": "7.05 (166)"
-      },
-      "Midterm I - Q4": {
-        "grade": "8.00",
-        "weight": "0.00 %",
-        "average": "8.09 (166)"
-      },
-      "Midterm I - Q5": {
-        "grade": "2.50",
-        "weight": "0.00 %",
-        "average": "4.67 (166)"
-      },
-      "Midterm I - Q6": {
-        "grade": "2.50",
-        "weight": "0.00 %",
-        "average": "3.77 (166)"
-      },
-      "Midterm I - Q7": {
-        "grade": "10.00",
-        "weight": "0.00 %",
-        "average": "7.62 (166)"
-      },
-      "Midterm I - Multiple Choice": {
-        "grade": "7.50",
-        "weight": "0.00 %",
-        "average": "11.22 (166)"
-      },
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-05-25T14:48:46.512488"
+    "assignments": {},
+    "last_updated": "2026-05-25T14:59:27.209752"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
     "overall_grade": "-",
-    "assignments": {
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-05-25T14:48:55.413023"
+    "assignments": {},
+    "last_updated": "2026-05-25T14:59:39.184522"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
     "overall_grade": "38.22",
-    "assignments": {
-      "SRS part-1": {
-        "grade": "100.00",
-        "weight": "25.00 %",
-        "average": "92.96 (167)"
-      },
-      "SRS final": {
-        "grade": "100.00",
-        "weight": "25.00 %",
-        "average": "94.44 (171)"
-      },
-      "SAD part-1": {
-        "grade": "-",
-        "weight": "25.00 %",
-        "average": "-"
-      },
-      "SAD final": {
-        "grade": "-",
-        "weight": "25.00 %",
-        "average": "-"
-      },
-      "Test Plan": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      },
-      "Project Quiz": {
-        "grade": "95.00",
-        "weight": "0.00 %",
-        "average": "83.07 (167)"
-      },
-      "Participation": {
-        "grade": "-",
-        "weight": "0.00 %",
-        "average": "-"
-      },
-      "MTq1": {
-        "grade": "25.50",
-        "weight": "-",
-        "average": "27.21 (162)"
-      },
-      "MTq2": {
-        "grade": "15.00",
-        "weight": "-",
-        "average": "18.99 (162)"
-      },
-      "MTq3": {
-        "grade": "3.00",
-        "weight": "-",
-        "average": "5.77 (175)"
-      },
-      "MTq4": {
-        "grade": "12.00",
-        "weight": "-",
-        "average": "9.77 (175)"
-      },
-      "MTq5": {
-        "grade": "11.00",
-        "weight": "-",
-        "average": "10.96 (175)"
-      },
-      "Midterm": {
-        "grade": "66.50",
-        "weight": "-",
-        "average": "69.26 (175)"
-      },
-      "Final": {
-        "grade": "-",
-        "weight": "0.00 %",
-        "average": "-"
-      },
-      "Course total": {
-        "grade": "38.22",
-        "weight": "-",
-        "average": "36.77 (175)"
-      }
-    },
-    "last_updated": "2026-05-25T14:49:03.360056"
+    "assignments": {},
+    "last_updated": "2026-05-25T14:59:55.069623"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
     "overall_grade": "-",
-    "assignments": {
-      "Attendance": {
-        "grade": "-",
-        "weight": "-",
-        "average": "99.87 (33)"
-      },
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "99.87 (33)"
-      }
-    },
-    "last_updated": "2026-05-25T14:49:11.931647"
+    "assignments": {},
+    "last_updated": "2026-05-25T15:00:05.584339"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -281,101 +131,54 @@
         "average": "44.78 (186)"
       }
     },
-    "last_updated": "2026-05-25T14:49:16.452053"
+    "last_updated": "2026-05-25T15:00:18.618165"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
     "overall_grade": "-",
-    "assignments": {
-      "Home Work-1": {
-        "grade": "-",
-        "weight": "16.67 %",
-        "average": "-"
-      },
-      "Attendance": {
-        "grade": "100.00",
-        "weight": "16.67 %",
-        "average": "100.00 (83)"
-      },
-      "Quiz 1": {
-        "grade": "96.00",
-        "weight": "16.67 %",
-        "average": "65.54 (91)"
-      },
-      "Home Work 2": {
-        "grade": "-",
-        "weight": "16.67 %",
-        "average": "-"
-      },
-      "Midterm": {
-        "grade": "94.00",
-        "weight": "16.67 %",
-        "average": "67.31 (98)"
-      },
-      "Course total": {
-        "grade": "65.00",
-        "weight": "-",
-        "average": "37.90 (102)"
-      }
-    },
-    "last_updated": "2026-05-25T14:49:19.512393"
+    "assignments": {},
+    "last_updated": "2026-05-25T15:00:34.493383"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
     "overall_grade": "100.00",
-    "assignments": {
-      "Attendance": {
-        "grade": "100.00",
-        "weight": "100.00 %",
-        "average": "98.75 (40)"
-      },
-      "Course total": {
-        "grade": "100.00",
-        "weight": "-",
-        "average": "98.75 (40)"
-      }
-    },
-    "last_updated": "2026-05-25T14:49:23.778544"
+    "assignments": {},
+    "last_updated": "2026-05-25T15:00:48.506532"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
     "overall_grade": "-",
+    "assignments": {},
+    "last_updated": "2026-05-25T15:00:59.881373"
+  },
+  "[STAT 361 Section 2] Computational Statistics": {
+    "course_id": "1006",
+    "overall_grade": "-",
     "assignments": {
-      "Midterm": {
-        "grade": "94.50",
-        "weight": "0.00 %",
-        "average": "59.57 (129)"
-      },
       "Course total": {
         "grade": "-",
         "weight": "-",
         "average": "-"
       }
     },
-    "last_updated": "2026-05-25T14:49:30.359989"
-  },
-  "[STAT 361 Section 2] Computational Statistics": {
-    "course_id": "1006",
-    "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-05-25T14:49:46.717938"
+    "last_updated": "2026-05-25T15:01:17.235229"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
     "overall_grade": "-",
     "assignments": {},
-    "last_updated": "2026-05-25T14:49:57.919703"
+    "last_updated": "2026-05-25T15:01:31.261653"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
     "overall_grade": "95.50",
     "assignments": {},
-    "last_updated": "2026-05-25T14:50:11.805489"
+    "last_updated": "2026-05-25T15:01:41.995164"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
     "overall_grade": "-",
     "assignments": {},
-    "last_updated": "2026-05-25T14:50:22.317537"
+    "last_updated": "2026-05-25T15:01:59.933301"
   }
 }
