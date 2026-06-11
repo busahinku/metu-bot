@@ -119,7 +119,7 @@
         "average": "17.78 (181)"
       }
     },
-    "last_updated": "2026-06-11T20:40:42.051064"
+    "last_updated": "2026-06-11T20:42:33.148957"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -131,7 +131,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:40:43.256543"
+    "last_updated": "2026-06-11T20:42:35.308593"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -218,7 +218,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:40:44.834173"
+    "last_updated": "2026-06-11T20:42:36.975918"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -230,7 +230,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:40:46.158975"
+    "last_updated": "2026-06-11T20:42:38.330013"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
@@ -312,7 +312,7 @@
         "average": "37.01 (174)"
       }
     },
-    "last_updated": "2026-06-11T20:40:47.993978"
+    "last_updated": "2026-06-11T20:42:39.807649"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
@@ -329,7 +329,7 @@
         "average": "99.88 (33)"
       }
     },
-    "last_updated": "2026-06-11T20:40:49.209929"
+    "last_updated": "2026-06-11T20:42:41.895108"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -341,7 +341,7 @@
         "average": "44.78 (186)"
       }
     },
-    "last_updated": "2026-06-11T20:40:50.950459"
+    "last_updated": "2026-06-11T20:42:43.290953"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
@@ -378,7 +378,7 @@
         "average": "38.04 (102)"
       }
     },
-    "last_updated": "2026-06-11T20:40:52.737412"
+    "last_updated": "2026-06-11T20:42:45.079218"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -395,7 +395,7 @@
         "average": "99.17 (40)"
       }
     },
-    "last_updated": "2026-06-11T20:40:53.957909"
+    "last_updated": "2026-06-11T20:42:47.167273"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
@@ -422,7 +422,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:40:55.176630"
+    "last_updated": "2026-06-11T20:42:48.749558"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -434,7 +434,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:40:56.405495"
+    "last_updated": "2026-06-11T20:42:50.127254"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -466,7 +466,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:40:57.783932"
+    "last_updated": "2026-06-11T20:42:51.520807"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
@@ -493,7 +493,7 @@
         "average": "77.79 (75)"
       }
     },
-    "last_updated": "2026-06-11T20:40:59.553807"
+    "last_updated": "2026-06-11T20:42:52.924741"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
@@ -505,6 +505,6 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-11T20:41:00.751584"
+    "last_updated": "2026-06-11T20:42:54.311897"
   }
 }
