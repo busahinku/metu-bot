@@ -2,38 +2,348 @@
   "[CENG 232 ALL Sections] Logic Design": {
     "course_id": "5042",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-06-19T15:51:39.157158"
+    "assignments": {
+      "Lab1 - Verilog Assignment": {
+        "grade": "1.00",
+        "weight": "0.00 %",
+        "average": "0.99 (171)"
+      },
+      "Lab 2 - Verilog Assignment Test VPL": {
+        "grade": "1.00",
+        "weight": "0.00 %",
+        "average": "0.99 (165)"
+      },
+      "Lab 3 - Verilog Assignment Test VPL (Part 1, Part 2)": {
+        "grade": "1.00",
+        "weight": "0.00 %",
+        "average": "1.00 (151)"
+      },
+      "Lab 3 - Verilog Playground (Part 3, Part 4)": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Lab Final Exam - Part 2 (VPL)": {
+        "grade": "25.00",
+        "weight": "0.00 %",
+        "average": "40.52 (153)"
+      },
+      "Lab Final Exam - Part 2 (TEST ENVIRONMENT FOR OBJECTION)": {
+        "grade": "62.50",
+        "weight": "0.00 %",
+        "average": "72.27 (55)"
+      },
+      "Verilog Free Session": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Lab 1 - Logisim Assignment": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Lab 2 - Preliminary Assignment": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Lab 1 - Logisim": {
+        "grade": "100.00",
+        "weight": "0.00 %",
+        "average": "91.37 (181)"
+      },
+      "Lab 1 - Verilog": {
+        "grade": "100.00",
+        "weight": "0.00 %",
+        "average": "93.92 (181)"
+      },
+      "Lab-1 DEMO": {
+        "grade": "100.00",
+        "weight": "0.00 %",
+        "average": "88.46 (181)"
+      },
+      "Lab-1 Quiz": {
+        "grade": "10.00",
+        "weight": "0.00 %",
+        "average": "6.60 (181)"
+      },
+      "Lab1 total": {
+        "grade": "100.00",
+        "weight": "28.00 %",
+        "average": "85.67 (181)"
+      },
+      "Lab 2 - Logisim": {
+        "grade": "100.00",
+        "weight": "40.00 %",
+        "average": "84.55 (181)"
+      },
+      "Lab 2 - Verilog": {
+        "grade": "100.00",
+        "weight": "10.00 %",
+        "average": "92.10 (181)"
+      },
+      "Lab 2 - Demo": {
+        "grade": "82.00",
+        "weight": "30.00 %",
+        "average": "92.46 (163)"
+      },
+      "Lab 2 - Quiz": {
+        "grade": "10.00",
+        "weight": "20.00 %",
+        "average": "61.99 (181)"
+      },
+      "Lab 2 total": {
+        "grade": "76.60",
+        "weight": "32.00 %",
+        "average": "80.41 (181)"
+      },
+      "midterm makeup documents": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Lab 3 - Preliminary Assignment": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Final makeup documents": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "Lab Final Exam - Part 1": {
+        "grade": "55.71",
+        "weight": "60.00 %",
+        "average": "66.86 (153)"
+      },
+      "Lab Final Exam - Part 2": {
+        "grade": "25.00",
+        "weight": "40.00 %",
+        "average": "42.22 (143)"
+      },
+      "Lab Final Exam total": {
+        "grade": "43.43",
+        "weight": "40.00 %",
+        "average": "55.90 (153)"
+      },
+      "Course total": {
+        "grade": "69.88",
+        "weight": "-",
+        "average": "68.62 (181)"
+      }
+    },
+    "last_updated": "2026-06-19T15:57:38.594851"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-06-19T15:51:53.106063"
+    "assignments": {
+      "Course total": {
+        "grade": "-",
+        "weight": "-",
+        "average": "-"
+      }
+    },
+    "last_updated": "2026-06-19T15:57:51.448282"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-06-19T15:52:03.984829"
+    "assignments": {
+      "Midterm I - Q1": {
+        "grade": "4.00",
+        "weight": "12.50 %",
+        "average": "5.19 (166)"
+      },
+      "Midterm I - Q2": {
+        "grade": "8.00",
+        "weight": "12.50 %",
+        "average": "7.77 (166)"
+      },
+      "Midterm I - Q3": {
+        "grade": "10.00",
+        "weight": "12.50 %",
+        "average": "7.05 (166)"
+      },
+      "Midterm I - Q4": {
+        "grade": "8.00",
+        "weight": "12.50 %",
+        "average": "8.09 (166)"
+      },
+      "Midterm I - Q5": {
+        "grade": "2.50",
+        "weight": "12.50 %",
+        "average": "4.67 (166)"
+      },
+      "Midterm I - Q6": {
+        "grade": "2.50",
+        "weight": "12.50 %",
+        "average": "3.77 (166)"
+      },
+      "Midterm I - Q7": {
+        "grade": "10.00",
+        "weight": "12.50 %",
+        "average": "7.62 (166)"
+      },
+      "Midterm I - Multiple Choice": {
+        "grade": "7.50",
+        "weight": "12.50 %",
+        "average": "11.22 (166)"
+      },
+      "Midterm 1 total": {
+        "grade": "52.50",
+        "weight": "42.86 %",
+        "average": "55.38 (166)"
+      },
+      "midterm II - Q1": {
+        "grade": "15.00",
+        "weight": "20.00 %",
+        "average": "13.08 (146)"
+      },
+      "midterm II - Q2": {
+        "grade": "10.00",
+        "weight": "20.00 %",
+        "average": "10.53 (146)"
+      },
+      "midterm II - Q3": {
+        "grade": "8.00",
+        "weight": "20.00 %",
+        "average": "9.09 (147)"
+      },
+      "midterm II - Q4": {
+        "grade": "11.00",
+        "weight": "20.00 %",
+        "average": "9.25 (147)"
+      },
+      "midterm II - Multiple Choice": {
+        "grade": "24.75",
+        "weight": "20.00 %",
+        "average": "30.51 (147)"
+      },
+      "Midterm 2 total": {
+        "grade": "68.75",
+        "weight": "0.00 %",
+        "average": "72.30 (147)"
+      },
+      "Final": {
+        "grade": "58.33",
+        "weight": "57.14 %",
+        "average": "60.49 (152)"
+      },
+      "Course total": {
+        "grade": "36.14",
+        "weight": "-",
+        "average": "40.85 (166)"
+      }
+    },
+    "last_updated": "2026-06-19T15:58:02.002205"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
     "overall_grade": "-",
     "assignments": {},
-    "last_updated": "2026-06-19T15:52:21.833099"
+    "last_updated": "2026-06-19T15:58:17.862824"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
     "overall_grade": "62.54",
-    "assignments": {},
-    "last_updated": "2026-06-19T15:52:33.748888"
+    "assignments": {
+      "SRS part-1": {
+        "grade": "100.00",
+        "weight": "25.00 %",
+        "average": "92.96 (167)"
+      },
+      "SRS final": {
+        "grade": "100.00",
+        "weight": "25.00 %",
+        "average": "94.44 (171)"
+      },
+      "SAD part-1": {
+        "grade": "-",
+        "weight": "25.00 %",
+        "average": "-"
+      },
+      "SAD final": {
+        "grade": "-",
+        "weight": "25.00 %",
+        "average": "-"
+      },
+      "Test Plan": {
+        "grade": "-",
+        "weight": "-",
+        "average": "-"
+      },
+      "Project Quiz": {
+        "grade": "95.00",
+        "weight": "0.00 %",
+        "average": "82.99 (168)"
+      },
+      "Participation": {
+        "grade": "-",
+        "weight": "0.00 %",
+        "average": "-"
+      },
+      "MTq1": {
+        "grade": "25.50",
+        "weight": "-",
+        "average": "27.21 (162)"
+      },
+      "MTq2": {
+        "grade": "15.00",
+        "weight": "-",
+        "average": "18.99 (162)"
+      },
+      "MTq3": {
+        "grade": "3.00",
+        "weight": "-",
+        "average": "5.80 (174)"
+      },
+      "MTq4": {
+        "grade": "12.00",
+        "weight": "-",
+        "average": "9.82 (174)"
+      },
+      "MTq5": {
+        "grade": "11.00",
+        "weight": "-",
+        "average": "11.02 (174)"
+      },
+      "Midterm": {
+        "grade": "66.50",
+        "weight": "-",
+        "average": "69.66 (174)"
+      },
+      "Final": {
+        "grade": "76.00",
+        "weight": "0.00 %",
+        "average": "71.13 (166)"
+      },
+      "Course total": {
+        "grade": "62.54",
+        "weight": "-",
+        "average": "58.73 (174)"
+      }
+    },
+    "last_updated": "2026-06-19T15:58:28.126072"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
     "overall_grade": "-",
-    "assignments": {},
-    "last_updated": "2026-06-19T15:52:44.263402"
+    "assignments": {
+      "Attendance": {
+        "grade": "-",
+        "weight": "-",
+        "average": "99.88 (33)"
+      },
+      "Course total": {
+        "grade": "-",
+        "weight": "-",
+        "average": "99.88 (33)"
+      }
+    },
+    "last_updated": "2026-06-19T15:58:32.855858"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -45,7 +355,7 @@
         "average": "44.78 (186)"
       }
     },
-    "last_updated": "2026-06-19T15:52:50.651419"
+    "last_updated": "2026-06-19T15:58:39.319037"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
@@ -87,7 +397,7 @@
         "average": "48.14 (102)"
       }
     },
-    "last_updated": "2026-06-19T15:52:57.445702"
+    "last_updated": "2026-06-19T15:58:46.017618"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -104,34 +414,13 @@
         "average": "99.17 (40)"
       }
     },
-    "last_updated": "2026-06-19T15:53:03.539704"
+    "last_updated": "2026-06-19T15:58:52.769606"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
     "overall_grade": "-",
-    "assignments": {
-      "Midterm": {
-        "grade": "94.50",
-        "weight": "0.00 %",
-        "average": "58.60 (134)"
-      },
-      "Final Exam": {
-        "grade": "65.00",
-        "weight": "0.00 %",
-        "average": "49.86 (131)"
-      },
-      "Attendance": {
-        "grade": "20.00",
-        "weight": "0.00 %",
-        "average": "13.14 (137)"
-      },
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-06-19T15:53:09.101242"
+    "assignments": {},
+    "last_updated": "2026-06-19T15:59:03.471146"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -143,7 +432,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-19T15:53:13.385266"
+    "last_updated": "2026-06-19T15:59:09.656032"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -180,24 +469,44 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-19T15:53:23.774467"
+    "last_updated": "2026-06-19T15:59:16.445009"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
     "overall_grade": "92.00",
-    "assignments": {},
-    "last_updated": "2026-06-19T15:53:34.121493"
+    "assignments": {
+      "Assignment 1": {
+        "grade": "96.00",
+        "weight": "25.00 %",
+        "average": "89.75 (69)"
+      },
+      "Midterm 1": {
+        "grade": "95.00",
+        "weight": "25.00 %",
+        "average": "73.01 (71)"
+      },
+      "Assignment 2": {
+        "grade": "93.00",
+        "weight": "25.00 %",
+        "average": "85.08 (72)"
+      },
+      "Midterm 2": {
+        "grade": "84.00",
+        "weight": "25.00 %",
+        "average": "69.41 (69)"
+      },
+      "Course total": {
+        "grade": "92.00",
+        "weight": "-",
+        "average": "74.31 (75)"
+      }
+    },
+    "last_updated": "2026-06-19T15:59:25.546649"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
     "overall_grade": "-",
-    "assignments": {
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-06-19T15:53:40.025028"
+    "assignments": {},
+    "last_updated": "2026-06-19T15:59:40.363685"
   }
 }
