@@ -151,7 +151,7 @@
       "Verilog Part 3 Grade": {
         "grade": "95.08",
         "weight": "30.00 %",
-        "average": "82.53 (181)"
+        "average": "82.95 (181)"
       },
       "Verilog Part 2 Grade": {
         "grade": "100.00",
@@ -166,7 +166,7 @@
       "Lab 3 - Verilog total": {
         "grade": "97.51",
         "weight": "10.00 %",
-        "average": "84.40 (180)"
+        "average": "84.53 (180)"
       },
       "Logisim Part 4 Grade": {
         "grade": "85.00",
@@ -196,7 +196,7 @@
       "Lab 3 total": {
         "grade": "93.08",
         "weight": "28.57 %",
-        "average": "81.78 (181)"
+        "average": "81.79 (181)"
       },
       "Lab Final Exam-Makeup": {
         "grade": "-",
@@ -221,10 +221,10 @@
       "Course total": {
         "grade": "79.94",
         "weight": "-",
-        "average": "73.60 (181)"
+        "average": "73.61 (181)"
       }
     },
-    "last_updated": "2026-06-26T10:58:32.465785"
+    "last_updated": "2026-06-26T11:01:03.736780"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -236,7 +236,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T10:58:33.305268"
+    "last_updated": "2026-06-26T11:01:04.733376"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -343,7 +343,7 @@
         "average": ""
       }
     },
-    "last_updated": "2026-06-26T10:58:34.453631"
+    "last_updated": "2026-06-26T11:01:05.801879"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -355,7 +355,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T10:58:35.299320"
+    "last_updated": "2026-06-26T11:01:06.623014"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
@@ -437,7 +437,7 @@
         "average": "73.53 (174)"
       }
     },
-    "last_updated": "2026-06-26T10:58:36.243553"
+    "last_updated": "2026-06-26T11:01:07.544260"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
@@ -454,7 +454,7 @@
         "average": "99.88 (33)"
       }
     },
-    "last_updated": "2026-06-26T10:58:37.313033"
+    "last_updated": "2026-06-26T11:01:08.365822"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -481,7 +481,7 @@
         "average": "93.23 (186)"
       }
     },
-    "last_updated": "2026-06-26T10:58:38.187163"
+    "last_updated": "2026-06-26T11:01:09.403242"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
@@ -533,7 +533,7 @@
         "average": "52.09 (102)"
       }
     },
-    "last_updated": "2026-06-26T10:58:39.297542"
+    "last_updated": "2026-06-26T11:01:10.464039"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -550,7 +550,7 @@
         "average": "99.17 (40)"
       }
     },
-    "last_updated": "2026-06-26T10:58:40.359650"
+    "last_updated": "2026-06-26T11:01:11.475434"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
@@ -577,7 +577,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T10:58:41.439429"
+    "last_updated": "2026-06-26T11:01:12.510552"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -589,7 +589,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T10:58:42.283936"
+    "last_updated": "2026-06-26T11:01:13.337765"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -631,7 +631,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T10:58:43.393865"
+    "last_updated": "2026-06-26T11:01:14.207711"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
@@ -673,7 +673,7 @@
         "average": "65.79 (75)"
       }
     },
-    "last_updated": "2026-06-26T10:58:44.486103"
+    "last_updated": "2026-06-26T11:01:15.091679"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
@@ -685,6 +685,6 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T10:58:45.354613"
+    "last_updated": "2026-06-26T11:01:15.915406"
   }
 }
