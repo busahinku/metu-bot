@@ -161,12 +161,12 @@
       "Verilog Part 1 Grade": {
         "grade": "100.00",
         "weight": "10.00 %",
-        "average": "89.27 (181)"
+        "average": "89.80 (181)"
       },
       "Lab 3 - Verilog total": {
         "grade": "97.51",
         "weight": "10.00 %",
-        "average": "84.74 (180)"
+        "average": "84.79 (180)"
       },
       "Logisim Part 4 Grade": {
         "grade": "85.00",
@@ -196,7 +196,7 @@
       "Lab 3 total": {
         "grade": "93.08",
         "weight": "10.00 %",
-        "average": "81.81 (181)"
+        "average": "81.82 (181)"
       },
       "Lab Final Exam-Makeup": {
         "grade": "-",
@@ -224,7 +224,7 @@
         "average": "67.88 (181)"
       }
     },
-    "last_updated": "2026-06-26T12:06:31.887571"
+    "last_updated": "2026-06-26T12:08:29.611952"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -236,7 +236,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T12:06:32.684240"
+    "last_updated": "2026-06-26T12:08:30.524337"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -343,7 +343,7 @@
         "average": ""
       }
     },
-    "last_updated": "2026-06-26T12:06:33.698908"
+    "last_updated": "2026-06-26T12:08:31.525538"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -355,7 +355,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T12:06:34.491610"
+    "last_updated": "2026-06-26T12:08:32.334018"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
@@ -437,7 +437,7 @@
         "average": "73.53 (174)"
       }
     },
-    "last_updated": "2026-06-26T12:06:35.399948"
+    "last_updated": "2026-06-26T12:08:33.356607"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
@@ -454,7 +454,7 @@
         "average": "99.88 (33)"
       }
     },
-    "last_updated": "2026-06-26T12:06:36.352150"
+    "last_updated": "2026-06-26T12:08:34.282959"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
@@ -481,7 +481,7 @@
         "average": "93.23 (186)"
       }
     },
-    "last_updated": "2026-06-26T12:06:37.178024"
+    "last_updated": "2026-06-26T12:08:35.097557"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
@@ -533,7 +533,7 @@
         "average": "52.09 (102)"
       }
     },
-    "last_updated": "2026-06-26T12:06:38.187256"
+    "last_updated": "2026-06-26T12:08:35.936372"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
@@ -550,7 +550,7 @@
         "average": "99.17 (40)"
       }
     },
-    "last_updated": "2026-06-26T12:06:39.143601"
+    "last_updated": "2026-06-26T12:08:36.867802"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
@@ -577,7 +577,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T12:06:40.146153"
+    "last_updated": "2026-06-26T12:08:37.668994"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
@@ -589,7 +589,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T12:06:40.930056"
+    "last_updated": "2026-06-26T12:08:38.603110"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
@@ -631,7 +631,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T12:06:41.937955"
+    "last_updated": "2026-06-26T12:08:39.558517"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
@@ -673,7 +673,7 @@
         "average": "65.79 (75)"
       }
     },
-    "last_updated": "2026-06-26T12:06:42.929722"
+    "last_updated": "2026-06-26T12:08:40.513700"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
@@ -685,6 +685,6 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-06-26T12:06:43.718850"
+    "last_updated": "2026-06-26T12:08:41.296876"
   }
 }
