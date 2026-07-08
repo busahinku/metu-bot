@@ -224,7 +224,7 @@
         "average": "67.91 (181)"
       }
     },
-    "last_updated": "2026-07-08T06:32:27.661847"
+    "last_updated": "2026-07-08T06:34:28.000106"
   },
   "[CENG 232 Section 2] Logic Design": {
     "course_id": "3047",
@@ -236,7 +236,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-07-08T06:32:28.454014"
+    "last_updated": "2026-07-08T06:34:28.921750"
   },
   "[CENG 280 - All Sections] Formal Langu. and Abstract Machines": {
     "course_id": "4789",
@@ -338,7 +338,7 @@
         "average": ""
       }
     },
-    "last_updated": "2026-07-08T06:32:29.301809"
+    "last_updated": "2026-07-08T06:34:29.750689"
   },
   "[CENG 280 Section 2] Formal Langu.and Abstract Machines": {
     "course_id": "3063",
@@ -350,7 +350,7 @@
         "average": "-"
       }
     },
-    "last_updated": "2026-07-08T06:32:30.095458"
+    "last_updated": "2026-07-08T06:34:30.523065"
   },
   "[CENG 350 - All Sections] Software Engineering": {
     "course_id": "5041",
@@ -432,7 +432,7 @@
         "average": "76.30 (174)"
       }
     },
-    "last_updated": "2026-07-08T06:32:31.018415"
+    "last_updated": "2026-07-08T06:34:31.401832"
   },
   "[CENG 350 Section 2] Software Engineering": {
     "course_id": "3106",
@@ -449,237 +449,54 @@
         "average": "99.88 (33)"
       }
     },
-    "last_updated": "2026-07-08T06:32:31.824484"
+    "last_updated": "2026-07-08T06:34:32.184633"
   },
   "[PSY 1010 Section 5] General Psychology": {
     "course_id": "531",
     "overall_grade": "96.00",
-    "assignments": {
-      "Midterm": {
-        "grade": "43.00",
-        "weight": "47.62 %",
-        "average": "44.74 (185)"
-      },
-      "Final": {
-        "grade": "48.00",
-        "weight": "47.62 %",
-        "average": "45.52 (185)"
-      },
-      "SONA": {
-        "grade": "5.00",
-        "weight": "4.76 %",
-        "average": "2.94 (185)"
-      },
-      "Course total": {
-        "grade": "96.00",
-        "weight": "-",
-        "average": "93.20 (185)"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:32.811740"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:34:42.697046"
   },
   "[STAT 333 All Sections] Data Structures and Algorithms": {
     "course_id": "5388",
     "overall_grade": "73.33",
-    "assignments": {
-      "Home Work-1": {
-        "grade": "-",
-        "weight": "11.11 %",
-        "average": "-"
-      },
-      "Attendance": {
-        "grade": "100.00",
-        "weight": "11.11 %",
-        "average": "100.00 (84)"
-      },
-      "Quiz 1": {
-        "grade": "96.00",
-        "weight": "11.11 %",
-        "average": "64.73 (94)"
-      },
-      "Home Work 2": {
-        "grade": "-",
-        "weight": "11.11 %",
-        "average": "-"
-      },
-      "Midterm": {
-        "grade": "94.00",
-        "weight": "11.11 %",
-        "average": "67.40 (102)"
-      },
-      "Midterm 2": {
-        "grade": "98.00",
-        "weight": "11.11 %",
-        "average": "74.27 (101)"
-      },
-      "Quiz 2": {
-        "grade": "98.00",
-        "weight": "11.11 %",
-        "average": "73.36 (88)"
-      },
-      "Final Exam": {
-        "grade": "74.00",
-        "weight": "11.11 %",
-        "average": "62.42 (101)"
-      },
-      "Course total": {
-        "grade": "73.33",
-        "weight": "-",
-        "average": "52.09 (102)"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:33.668240"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:34:59.046797"
   },
   "[STAT 333 Section 2] Data Structures and Algorithms": {
     "course_id": "4434",
     "overall_grade": "100.00",
-    "assignments": {
-      "Attendance": {
-        "grade": "100.00",
-        "weight": "100.00 %",
-        "average": "99.17 (40)"
-      },
-      "Course total": {
-        "grade": "100.00",
-        "weight": "-",
-        "average": "99.17 (40)"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:34.478495"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:35:13.779442"
   },
   "[STAT 361 All Sections] Computational Statistics": {
     "course_id": "5040",
     "overall_grade": "-",
-    "assignments": {
-      "Midterm": {
-        "grade": "94.50",
-        "weight": "0.00 %",
-        "average": "58.60 (134)"
-      },
-      "Final Exam": {
-        "grade": "65.00",
-        "weight": "0.00 %",
-        "average": "49.86 (131)"
-      },
-      "Attendance": {
-        "grade": "20.00",
-        "weight": "0.00 %",
-        "average": "13.14 (137)"
-      },
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:35.291720"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:35:33.976091"
   },
   "[STAT 361 Section 2] Computational Statistics": {
     "course_id": "1006",
     "overall_grade": "-",
-    "assignments": {
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:36.093700"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:35:45.152711"
   },
   "[STAT 364 Section 1] Linear Models II": {
     "course_id": "1007",
     "overall_grade": "0.00",
-    "assignments": {
-      "Linear Regression Survival Game": {
-        "grade": "0.00",
-        "weight": "0.44 %",
-        "average": "-"
-      },
-      "MID TERM EXAM": {
-        "grade": "22.00",
-        "weight": "44.25 %",
-        "average": "14.35 (93)"
-      },
-      "Quiz 1": {
-        "grade": "79.00",
-        "weight": "3.69 %",
-        "average": "74.46 (80)"
-      },
-      "Quiz 2": {
-        "grade": "100.00",
-        "weight": "3.69 %",
-        "average": "79.75 (89)"
-      },
-      "Quiz 3": {
-        "grade": "83.00",
-        "weight": "3.69 %",
-        "average": "66.95 (85)"
-      },
-      "Final Exam": {
-        "grade": "40.00",
-        "weight": "44.25 %",
-        "average": "24.75 (92)"
-      },
-      "Course total": {
-        "grade": "0.00",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:37.094577"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:36:04.790258"
   },
   "[STAT 376 Section 1] Stochastic Processes": {
     "course_id": "1008",
     "overall_grade": "85.10",
-    "assignments": {
-      "Assignment 1": {
-        "grade": "96.00",
-        "weight": "5.00 %",
-        "average": "89.75 (69)"
-      },
-      "Midterm 1": {
-        "grade": "95.00",
-        "weight": "25.00 %",
-        "average": "71.83 (75)"
-      },
-      "Assignment 2": {
-        "grade": "93.00",
-        "weight": "5.00 %",
-        "average": "85.08 (72)"
-      },
-      "Midterm 2": {
-        "grade": "84.00",
-        "weight": "25.00 %",
-        "average": "67.96 (73)"
-      },
-      "Assignment 3": {
-        "grade": "100.00",
-        "weight": "5.00 %",
-        "average": "95.64 (69)"
-      },
-      "Final": {
-        "grade": "74.00",
-        "weight": "35.00 %",
-        "average": "55.86 (72)"
-      },
-      "Course total": {
-        "grade": "85.10",
-        "weight": "-",
-        "average": "65.87 (75)"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:37.932747"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:36:19.901856"
   },
   "[TURK 304 Section 57] Turkish II": {
     "course_id": "3698",
     "overall_grade": "-",
-    "assignments": {
-      "Course total": {
-        "grade": "-",
-        "weight": "-",
-        "average": "-"
-      }
-    },
-    "last_updated": "2026-07-08T06:32:38.728350"
+    "assignments": {},
+    "last_updated": "2026-07-08T06:36:30.566755"
   }
 }
